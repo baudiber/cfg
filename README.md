@@ -2,4 +2,4 @@
 my config files
 
 install script 
-curl -Lks http://bit.do/baudiber-cfg | /bin/bash
+curl -Lks http://bit.do/cfg-baudibert | /bin/bash
