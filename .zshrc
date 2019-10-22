@@ -102,3 +102,6 @@ alias SU2="ssh wm@10.8.1.17"
 alias LM1="ssh wm@10.8.1.21"
 alias LM2="ssh wm@10.8.1.25"
 alias config='/usr/bin/git --git-dir=/home/wm/.cfg/ --work-tree=/home/wm'
+alias DOCKERPS='ansible all -u wm -a "docker ps"'
+alias PING="ansible all -u wm -m ping"
+
