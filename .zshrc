@@ -96,12 +96,16 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
+alias vimconfig="vim ~/.vimrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias SU1="ssh wm@10.8.1.13"
 alias SU2="ssh wm@10.8.1.17"
 alias LM1="ssh wm@10.8.1.21"
 alias LM2="ssh wm@10.8.1.25"
+alias ZEUS="ssh wm@zeus.winter-mushroom.com"
 alias config='/usr/bin/git --git-dir=/home/wm/.cfg/ --work-tree=/home/wm'
 alias DOCKERPS='ansible all -u wm -a "docker ps"'
 alias PING="ansible all -u wm -m ping"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

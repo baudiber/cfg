@@ -1,5 +1,7 @@
 "VIM RUN COMMANDS baudiber March 2019
 "to reload without restart = :source $MYVIMRC  or  :so % 
+"good plugin source: https://bluz71.github.io/2017/05/21/vim-plugins-i-like.html
+"font idea https://github.com/be5invis/Iosevka
 
 "------------------------------------------------------------------------------
 "==========================     VIM PLUG INSTALL    ===========================
@@ -17,18 +19,36 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/goyo.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'rakr/vim-one'
+Plug 'bluz71/vim-moonfly-colors'
 Plug 'tpope/vim-fugitive'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'ayu-theme/ayu-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --no-bash' }
+Plug 'junegunn/fzf.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'timonv/vim-cargo'
 Plug 'vim-airline/vim-airline'
+Plug 'wellle/targets.vim' "enables additional text objects
+Plug 'rhysd/clever-f.vim' "more informative f,F,t,T movements
+Plug 'ajh17/VimCompletesMe'
 
 call plug#end()
 
 "to install plugins, resource vimrc and :PlugInstall
+
+
+"------------------------------------------------------------------------------
+"==========================     PLUGins Settings    ===========================
+"clever-f
+let g:clever_f_across_no_line    = 1
+let g:clevef_f_fix_key_direction = 1
+let g:clever_f_timeout_ms        = 3000
+"vimcompletesme
+autocmd FileType css,scss let b:vcm_tab_complete = "omni"
+
 
 "------------------------------------------------------------------------------
 "==========================     VIM MODS            ===========================
@@ -125,8 +145,13 @@ set termguicolors
 "let ayucolor="light"
 let ayucolor="mirage"
 "let ayucolor="dark"
-colorscheme onedark
-let g:airline_theme='onedark'
+"colorscheme onedark
+"colorscheme one
+colorscheme moonfly
+"set background=dark " for the dark version
+let g:airline_theme='one'
+"let g:airline_theme='onedark'
+let g:one_allow_italics = 1 " I love italic for comments
 
 "------------------------------------------------------------------------------
 "==========================     HELP IN NEW TAB     ===========================
