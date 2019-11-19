@@ -103,14 +103,16 @@ alias SU2="ssh wm@10.8.1.17"
 alias LM1="ssh wm@10.8.1.21"
 alias LM2="ssh wm@10.8.1.25"
 alias ZEUS="ssh wm@zeus.winter-mushroom.com"
-alias config='/usr/bin/git --git-dir=/home/wm/.cfg/ --work-tree=/home/wm'
 alias dkc="docker-compose"
 alias cr="cargo run"
 alias cb="cargo build"
 alias vimo="vim -O"
 alias DOCKERPS="ansible all -u wm -a 'docker ps'"
 alias PING="ansible all -u wm -m ping"
-alias AGENT="ssh-agent zsh && ssh-add ~/.ssh/id_rsa"
+alias AGENT="ssh-agent zsh"
+function config {
+   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+}
 
 #WM VARS
 #export ADDR=https://kiabi.winter-mushroom.com/api/v1/dvm/
