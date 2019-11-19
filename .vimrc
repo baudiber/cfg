@@ -146,8 +146,8 @@ set termguicolors
 let ayucolor="mirage"
 "let ayucolor="dark"
 "colorscheme onedark
-"colorscheme one
-colorscheme moonfly
+colorscheme one
+"colorscheme moonfly
 "set background=dark " for the dark version
 let g:airline_theme='one'
 "let g:airline_theme='onedark'

@@ -104,5 +104,18 @@ alias LM1="ssh wm@10.8.1.21"
 alias LM2="ssh wm@10.8.1.25"
 alias ZEUS="ssh wm@zeus.winter-mushroom.com"
 alias config='/usr/bin/git --git-dir=/home/wm/.cfg/ --work-tree=/home/wm'
+alias dkc="docker-compose"
+alias cr="cargo run"
+alias cb="cargo build"
+alias vimo="vim -O"
+alias DOCKERPS="ansible all -u wm -a 'docker ps'"
+alias AGENTINIT="ssh-agent zsh && ssh-add ~/.ssh/id_rsa"
+
+#WM VARS
+#export ADDR=https://kiabi.winter-mushroom.com/api/v1/dvm/
+export ADDR=https://superu.winter-mushroom.com/api/v1/dvm/
+#export KIOSK_ID=4849094916996869111
+export KIOSK_ID=7863995651081657791
+#export KIOSK_ID=8557842059617877038
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
