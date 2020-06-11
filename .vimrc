@@ -224,7 +224,7 @@ nnoremap k gk
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nn <silent> K :call CocActionAsync('doHover')<cr>
-nnoremap <C-p> :GFiles<CR>
+nnoremap <leader>f :GFiles<CR>
 "nmap <silent> <RIGHT>			:cnext<CR>
 nmap <silent> <RIGHT>			:bnext<CR>
 "nmap <silent> <RIGHT><RIGHT>	:cnfile<CR><C-G>
